@@ -1,10 +1,10 @@
 import { Component, inject, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { ProductsService } from './api/products.service';
 import { AsyncPipe, JsonPipe } from '@angular/common';
 
 @Component({
-  imports: [AsyncPipe, JsonPipe],
+  imports: [RouterOutlet, RouterLink],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

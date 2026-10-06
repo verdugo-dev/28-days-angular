@@ -1,3 +1,10 @@
-<pre>
-  {{products$ | async | json}}
-</pre>
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/cart">Cart</a>
+      <a routerLink="/products">Products</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
